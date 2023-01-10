@@ -21,6 +21,20 @@ public class Exer2 {
 	//average equation
 		average_num =total_num/num.length;
 		System.out.println(average_num);
+		
+		float sum = 0;
+	double dev= 0;
+		for(int i=0; i<num.length; i++)
+		{
+			sum = sum +((num[i]-average_num)*(num[i]-average_num));
+			
+		}
+		dev= Math.sqrt(sum/num.length);
+		System.out.println(dev);
+		
+		
+		
 	}
+	
 
 }
